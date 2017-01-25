@@ -14,3 +14,5 @@ This is basically a home financial software. Atleast we are starting from that. 
 4. Yes, directly importing transactions from bank is the best way. But that would be a complex process, because some banks may provide easy to import data set like qif, csv or excel sheets. But mapping all that data would be a tedious process. Getting in qif or like format should be the best way, but how many banks provide such facility. 
 
 5. Also for pt 4 above, should the process be manual or automatic. Again depends on the bank. 
+
+6. For each month I should be getting how much change in my assests are there.
