@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Feb 09, 2017 at 01:52 AM
+-- Generation Time: Feb 10, 2017 at 06:10 AM
 -- Server version: 10.0.28-MariaDB
 -- PHP Version: 5.5.14
 
@@ -228,7 +228,7 @@ CREATE TABLE `pma__pdf_pages` (
 --
 
 REPLACE INTO `pma__pdf_pages` (`db_name`, `page_nr`, `page_descr`) VALUES
-('HomeFin', 1, 'HomeFinDBModel');
+('HomeFin', 2, 'HomeFinDBModel');
 
 -- --------------------------------------------------------
 
@@ -248,6 +248,7 @@ CREATE TABLE `pma__recent` (
 --
 
 REPLACE INTO `pma__recent` (`username`, `tables`) VALUES
+('homefin', '[{\"db\":\"HomeFin\",\"table\":\"shopping_data\"}]'),
 ('root', '[{\"db\":\"ledger\",\"table\":\"kmmTransactions\"},{\"db\":\"ledger\",\"table\":\"kmmInstitutions\"},{\"db\":\"ledger\",\"table\":\"kmmAccounts\"},{\"db\":\"amarokdb\",\"table\":\"tracks\"}]'),
 ('vivek', '[{\"db\":\"phpmyadmin\",\"table\":\"pma__pdf_pages\"},{\"db\":\"phpmyadmin\",\"table\":\"pma__navigationhiding\"},{\"db\":\"phpmyadmin\",\"table\":\"pma__history\"},{\"db\":\"phpmyadmin\",\"table\":\"pma__favorite\"},{\"db\":\"phpmyadmin\",\"table\":\"pma__users\"},{\"db\":\"phpmyadmin\",\"table\":\"pma__column_info\"},{\"db\":\"phpmyadmin\",\"table\":\"pma__designer_settings\"},{\"db\":\"phpmyadmin\",\"table\":\"pma__recent\"},{\"db\":\"phpmyadmin\",\"table\":\"pma__relation\"},{\"db\":\"phpmyadmin\",\"table\":\"pma__central_columns\"}]');
 
@@ -299,6 +300,13 @@ CREATE TABLE `pma__table_coords` (
   `x` float UNSIGNED NOT NULL DEFAULT '0',
   `y` float UNSIGNED NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Table coordinates for phpMyAdmin PDF output';
+
+--
+-- Dumping data for table `pma__table_coords`
+--
+
+REPLACE INTO `pma__table_coords` (`db_name`, `table_name`, `pdf_page_number`, `x`, `y`) VALUES
+('HomeFin', 'shopping_data', 2, 161, 188);
 
 -- --------------------------------------------------------
 
@@ -370,7 +378,7 @@ CREATE TABLE `pma__userconfig` (
 --
 
 REPLACE INTO `pma__userconfig` (`username`, `timevalue`, `config_data`) VALUES
-('homefin', '2017-02-09 01:52:43', '{\"collation_connection\":\"utf8mb4_unicode_ci\",\"Export\\/file_template_database\":\"homefin_db_model\"}'),
+('homefin', '2017-02-10 06:10:29', '{\"collation_connection\":\"utf8mb4_unicode_ci\",\"Export\\/file_template_database\":\"homefin_db_model\"}'),
 ('root', '2017-01-26 01:22:00', '{\"collation_connection\":\"utf8mb4_unicode_ci\"}'),
 ('vivek', '2017-02-07 05:51:49', '{\"collation_connection\":\"utf8mb4_unicode_ci\",\"Export\\/file_template_database\":\"homefin_db_model\"}');
 
